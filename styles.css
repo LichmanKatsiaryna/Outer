@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Poppins:ital@1&display=swap');
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  body{
+    padding: 2rem;
+  }
+  
+  .head {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .brandName{
+    border: 4px solid black;
+    padding: 10px 100px;
+    font-size: 50px;
+    font-size: 30px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav>li{
+    display: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-decoration: underline;
+  }
+
+  .nav>li>a{
+    font-size: 150%;
+    color: black;
+  }
+
+  .nav>li:hover{
+    color: darkgrey;
+  }
+
+  .row{
+    padding: 5rem 0 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .cosmetics{
+    font-size: 4%;
+    text-align: center;
+  }
+
+  .carousel{
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .d-block{
+    height: 30em;
+  }
+
+  .bar>li:hover{
+    color: white;
+  }
+
+  .fashion {
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fashion>h2{
+    font-size: 60px;
+    letter-spacing: 0.4rem;
+    align-self: center;
+  }
+
+  .fashion>p{
+    align-self: center;
+    padding: 2rem 0;
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .fashion_img_row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.4rem;
+  }
+
+  .column{
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 0.4rem;
+  }
+
+  .column>img{
+    margin-top: 0.8rem;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  #common_img_fashion{
+    margin-top: 0.8rem;
+    padding: 0 0.4rem;
+    width: 100%;
+  }
+
+  .contact{
+    padding-top: 5rem;
+  }
+
+  .contact>h2{
+    font-size: 60px;
+    letter-spacing: 0.4rem;
+    text-align: center;
+  }
+
+  .contact_row{
+    display: inline;
+  }
+
+  .row_ul{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    justify-content: flex-end;
+  }
+
+  #map_size{
+    width: 100%;
+    height: 45rem;
+  }
+
+  .row_ul>ul{
+    list-style-type: none;
+    font-size: 50px;
+  }
+  .contact_items>li{
+    padding: 1em 0;
+  }
+  .contact_items>li>i{
+    padding-right: 1em;
+    color: pink;
+  }
+
+  @media only screen and (max-width: 830px){
+    .bar{
+        font-size: 30px;
+    }
+
+    .brandName{
+        border: 3px solid black;
+      }
+
+    .cosmetics{
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    .row{
+      flex-direction: column;
+      padding: 2rem 0;
+    }
+
+    .carousel{
+      align-self: center;
+    }
+
+    .d-block{
+      height: 28em;
+      width: 100%;
+    }
+
+    .fashion {
+      padding: 3rem 0 0;
+    }
+  
+    .fashion>h2{
+      font-size: 3rem;
+    }
+  
+    .fashion>p{
+      padding: 1rem 0;
+      font-size: 2rem;
+    }
+
+    .contact_row{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #phones{
+      width: 100%;
+    }
+
+    #map_size{
+      width: 100%;
+      height: 30rem;
+    }
+
+    .row_ul>ul{
+      font-size: 30px;
+    }
+   
+  }
+
+  @media only screen and (min-width: 768px){
+    .bar{
+        font-size: 40px;
+    }
+
+    .brandName{
+        border: 4px solid black;
+        padding: 20px 200px;
+        font-size: 60px;
+      }
+
+      .nav{
+        font-size: 2rem;
+      }
+
+      .cosmetics{
+        font-size: 2.5rem;
+      }
+
+      .d-block{
+        align-items: center;
+        height: 30em;
+      }
+  }
+
+  @media only screen and (min-width: 1024px){
+      .d-block{
+        height: 45em;
+      }
+
+      .brandName{
+        font-size: 6rem;
+      }
+
+      .cosmetics{
+        font-size: 3.5rem;
+      }
+      .row{
+        flex-direction:row;
+        padding: 2rem 0;
+      }
+
+      #tablet{
+        width: 45%;
+      }
+
+      .fashion {
+        padding: 5rem 0 2rem;
+      }
+    
+      .fashion>h2{
+        font-size: 60px;
+      }
+    
+      .fashion>p{
+        padding: 2rem 0 0;
+        font-size: 3rem;
+      }
+  }
+
+  @media only screen and (min-width: 2000px){
+    .row{
+      flex-direction: row;
+    }
+
+    #tablet{
+      width: 40%;
+    } 
+
+    .d-block{
+      height: 50em;
+    }
+}
+
+@media only screen and (min-width: 2300px){
+  .d-block{
+    height: 65em;
+  }
+
+  .brandName{
+    font-size: 7rem;
+  }
+
+  .cosmetics{
+    font-size: 4rem;
+  }
+
+  .fashion {
+    padding: 8rem 0 2rem;
+  }
+  .fashion>h2{
+    font-size: 80px;
+  }
+
+  .fashion>p{
+    font-size: 60px;
+  }
+
+}
+  
+
